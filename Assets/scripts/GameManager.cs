@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     private Animator animator;
     private bool reachedRedButt = false;
     private bool reachedYellowButt = false;
-    private int Waiting_Time = 2; // used for pausing the lion walk animation until the conversation is over
+    private int Waiting_Time = 20; // used for pausing the lion walk animation until the conversation is over
 
     // Start is called before the first frame update
     void Start()
