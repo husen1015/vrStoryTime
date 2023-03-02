@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// lion stops to introduce butterfly 2, and butterfly 2 appears
+/// </summary>
 public class Chapter3 : MonoBehaviour
 {
-    // lion stops to introduce butterfly 2, and butterfly 2 appears
 
     public string ChapterEvent;
     public GameObject AppearingButterfly;

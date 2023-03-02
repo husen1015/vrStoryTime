@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Red and White continue walking together
+/// </summary>
 public class Chapter4 : MonoBehaviour
 {
-    // Red and White continue walking together
+    
     private FMOD.Studio.EventInstance storyInstance;
 
     public string ChapterEvent;

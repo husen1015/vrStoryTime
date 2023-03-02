@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// butterfly 3 appears and is introduced with the 2 existing butterflies
+/// </summary>
 public class Chapter5 : MonoBehaviour
 {
     // lion stops and yellow joins the gang
@@ -37,7 +40,7 @@ public class Chapter5 : MonoBehaviour
         storyInstance.getPlaybackState(out state);
         if(state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
         {
-            GetComponent<Chapter4>().enabled = true;
+            GetComponent<Chapter6>().enabled = true;
             this.enabled=false;
         }
     }
