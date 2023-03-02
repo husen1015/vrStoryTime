@@ -1,3 +1,4 @@
+using DigitalRuby.RainMaker;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class Chapter7 : MonoBehaviour
     public GameObject lion;
     public GameObject butterflies;
     public GameObject skyController;
+    public GameObject rainController;
 
     private Animator lionAnimation;
     private Animator butterflyAnimator;
@@ -20,6 +22,7 @@ public class Chapter7 : MonoBehaviour
         lionAnimation = lion.GetComponent<Animator>();
         lionAnimation.enabled = false;
         skyController.GetComponent<SkyboxController>().fadeToCloudyWeather = true;
+        rainController.GetComponent<RainScript>().RainIntensity= 1;
 
         //fmod stuff
     }
