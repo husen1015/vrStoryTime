@@ -3,39 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// the 3 butterflies roam a sunny and pleasant forest
+/// the sky turns cloudy and rain starts to fall
 /// </summary>
-public class Chapter6 : MonoBehaviour
+public class Chapter7 : MonoBehaviour
 {
     public GameObject lion;
     public GameObject butterflies;
+    public GameObject skyController;
 
     private Animator lionAnimation;
     private Animator butterflyAnimator;
-
     // Start is called before the first frame update
     void Start()
     {
         butterflyAnimator = butterflies.GetComponent<Animator>();
         lionAnimation = lion.GetComponent<Animator>();
-        lionAnimation.enabled = true;
-        butterflyAnimator.SetBool("shouldMeet2", false);
-        //fmod stuff
+        lionAnimation.enabled = false;
+        skyController.GetComponent<SkyboxController>().fadeToCloudyWeather = true;
 
+        //fmod stuff
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        //fmod stuff
         
-        //temporary shift to chapter 7 until lukas implements passage through fmod
-        if(lion.transform.localPosition.x < -30)
-        {
-            Debug.Log("ok");
-            GetComponent<Chapter7>().enabled = true;
-            this.enabled = false;
-        }
     }
 }
