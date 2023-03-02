@@ -21270,7 +21270,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905772975}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc1b85958c18b4c71ae9930613d82b1e, type: 3}
   m_Name: 
@@ -21301,7 +21301,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905772975}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 775d8a535fd6a45fb82ebcc94a542905, type: 3}
   m_Name: 
@@ -21337,6 +21337,7 @@ MonoBehaviour:
   ChapterEvent: event:/Story Part 5
   AppearingButterfly: {fileID: 5630937}
   lion: {fileID: 1989891611}
+  butterflies: {fileID: 79762687}
 --- !u!1001 &1908727037
 PrefabInstance:
   m_ObjectHideFlags: 0

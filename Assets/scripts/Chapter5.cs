@@ -9,19 +9,24 @@ public class Chapter5 : MonoBehaviour
     public GameObject AppearingButterfly;
 
     public GameObject lion;
+    public GameObject butterflies; 
 
     private Animator lionAnimation;
+    private Animator butterflyAnimator; 
 
     private FMOD.Studio.EventInstance storyInstance;
 
     // Start is called before the first frame update
     void Start()
     {
+        butterflyAnimator = butterflies.GetComponent<Animator>();
         lionAnimation = lion.GetComponent<Animator>();
         lionAnimation.enabled = false;
         storyInstance = FMODUnity.RuntimeManager.CreateInstance(ChapterEvent);
         storyInstance.start();
         AppearingButterfly.SetActive(true);
+        butterflyAnimator.SetBool("shouldMeet2", true);
+
     }
 
     // Update is called once per frame, and here it will be used to check when the chapter should disbale itself
