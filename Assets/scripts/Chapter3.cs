@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chapter2 : MonoBehaviour
+public class Chapter3 : MonoBehaviour
 {
+    // lion stops to introduce butterfly 2, and butterfly 2 appears
 
     public string ChapterEvent;
     public GameObject AppearingButterfly;
@@ -11,6 +12,7 @@ public class Chapter2 : MonoBehaviour
     public GameObject lion;
 
     private Animator lionAnimation;
+    private Animator butterflyAnimator; // addition- play it when this chapter starts
 
     private FMOD.Studio.EventInstance storyInstance;
 
@@ -18,10 +20,11 @@ public class Chapter2 : MonoBehaviour
     void Start()
     {
         lionAnimation = lion.GetComponent<Animator>();
-        lionAnimation.enabled = true;
+        lionAnimation.enabled = false;
         storyInstance = FMODUnity.RuntimeManager.CreateInstance(ChapterEvent);
         storyInstance.start();
         AppearingButterfly.SetActive(true);
+        butterflyAnimator.SetBool("shouldMeet", true); //start the meetup animation
     }
 
     // Update is called once per frame, and here it will be used to check when the chapter should disbale itself
@@ -32,7 +35,7 @@ public class Chapter2 : MonoBehaviour
         storyInstance.getPlaybackState(out state);
         if(state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
         {
-            GetComponent<Chapter3>().enabled = true;
+            GetComponent<Chapter4>().enabled = true;
             this.enabled=false;
         }
     }

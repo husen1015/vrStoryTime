@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chapter3 : MonoBehaviour
+public class Chapter2 : MonoBehaviour
 {
-    // lion stops to introduce butterfly 2, and butterfly 2 appears
 
     public string ChapterEvent;
     public GameObject AppearingButterfly;
@@ -12,14 +11,13 @@ public class Chapter3 : MonoBehaviour
     public GameObject lion;
 
     private Animator lionAnimation;
-
     private FMOD.Studio.EventInstance storyInstance;
 
     // Start is called before the first frame update
     void Start()
     {
         lionAnimation = lion.GetComponent<Animator>();
-        lionAnimation.enabled = false;
+        lionAnimation.enabled = true;
         storyInstance = FMODUnity.RuntimeManager.CreateInstance(ChapterEvent);
         storyInstance.start();
         AppearingButterfly.SetActive(true);
@@ -33,7 +31,7 @@ public class Chapter3 : MonoBehaviour
         storyInstance.getPlaybackState(out state);
         if(state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
         {
-            GetComponent<Chapter4>().enabled = true;
+            GetComponent<Chapter3>().enabled = true;
             this.enabled=false;
         }
     }

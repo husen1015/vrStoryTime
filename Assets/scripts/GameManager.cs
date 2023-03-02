@@ -23,14 +23,14 @@ public class GameManager : MonoBehaviour
     private FMOD.Studio.EventInstance storyInstance;
 
     // Story Settings
-    List<string> ChaptersList = new List<string> {"event:/Story Part 1", "event:/Story Part 2"}; 
+    List<string> ChaptersList = new List<string> { "event:/Story Part 1", "event:/Story Part 2" };
     int currChapter = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         // Create a timer with a 5 second interval.
-        
+
         animator = Lion.GetComponent<Animator>();
 
         generalInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Background music");
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
 
         // generalInstance.release();
         // storyInstance.release();
-        
+
     }
 
     // Update is called once per frame
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         //     redButt.SetActive(true);
         //     //waitforConvo(5);
         //     StartCoroutine("waitXSeconds");
-            
+
         // }
 
         // //make the yellow butterfly appear
@@ -87,8 +87,8 @@ public class GameManager : MonoBehaviour
 
     void loadNextChapter()
     {
-            storyInstance = FMODUnity.RuntimeManager.CreateInstance(ChaptersList[currChapter++]);
-            storyInstance.start();
+        storyInstance = FMODUnity.RuntimeManager.CreateInstance(ChaptersList[currChapter++]);
+        storyInstance.start();
     }
 
 
