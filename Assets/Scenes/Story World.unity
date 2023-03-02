@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5630938
 Transform:
   m_ObjectHideFlags: 0
@@ -5051,7 +5051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &433947043
 Transform:
   m_ObjectHideFlags: 0
@@ -7182,7 +7182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &625308440
 Transform:
   m_ObjectHideFlags: 0
@@ -21239,7 +21239,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905772975}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f318c355c9934c045877fe818f07f599, type: 3}
   m_Name: 
@@ -21278,6 +21278,7 @@ MonoBehaviour:
   ChapterEvent: event:/Story Part 3
   AppearingButterfly: {fileID: 625308439}
   lion: {fileID: 1989891611}
+  butterflies: {fileID: 79762687}
 --- !u!114 &1905772979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21285,7 +21286,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905772975}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff0184b07e633412692cdcceb2b07d10, type: 3}
   m_Name: 
@@ -21300,7 +21301,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905772975}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 775d8a535fd6a45fb82ebcc94a542905, type: 3}
   m_Name: 
@@ -21320,6 +21321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChapterEvent: event:/Story Part 4
   lion: {fileID: 1989891611}
+  butterflies: {fileID: 0}
 --- !u!114 &1905772982
 MonoBehaviour:
   m_ObjectHideFlags: 0

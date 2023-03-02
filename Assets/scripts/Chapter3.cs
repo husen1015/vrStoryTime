@@ -10,6 +10,7 @@ public class Chapter3 : MonoBehaviour
     public GameObject AppearingButterfly;
 
     public GameObject lion;
+    public GameObject butterflies; // contains the butterflies animator
 
     private Animator lionAnimation;
     private Animator butterflyAnimator; // addition- play it when this chapter starts
@@ -19,6 +20,7 @@ public class Chapter3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        butterflyAnimator = butterflies.GetComponent<Animator>();
         lionAnimation = lion.GetComponent<Animator>();
         lionAnimation.enabled = false;
         storyInstance = FMODUnity.RuntimeManager.CreateInstance(ChapterEvent);
