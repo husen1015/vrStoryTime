@@ -9,17 +9,12 @@ using UnityEngine;
 public class Chapter7 : MonoBehaviour
 {
     public GameObject lion;
-    public GameObject butterflies;
     public GameObject skyController;
     public GameObject rainController;
 
-    private Animator lionAnimation;
-    private Animator butterflyAnimator;
     // Start is called before the first frame update
     void Start()
     {
-        butterflyAnimator = butterflies.GetComponent<Animator>();
-        lionAnimation = lion.GetComponent<Animator>();
         skyController.GetComponent<SkyboxController>().fadeToCloudyWeather = true;
         rainController.GetComponent<RainScript>().RainIntensity= 1;
 

@@ -24,6 +24,16 @@ public class Chapter9 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //fmod stuff
+
+        //Debug.Log(lion.transform.localPosition.x);
+
+        //temporary shift to chapter 10 until lucas implements passage through fmod
+        if (lion.transform.localPosition.x <= -39)
+        {
+            
+            GetComponent<Chapter10>().enabled = true;
+            this.enabled = false;
+        }
     }
 }

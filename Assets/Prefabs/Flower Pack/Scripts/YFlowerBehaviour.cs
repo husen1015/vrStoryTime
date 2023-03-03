@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlowerBehaviour : MonoBehaviour
+public class YFlowerBehaviour : MonoBehaviour
 {
 
     public GameObject leaf1;
