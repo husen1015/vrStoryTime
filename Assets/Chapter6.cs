@@ -30,7 +30,7 @@ public class Chapter6 : MonoBehaviour
 
         //fmod stuff
         
-        //temporary shift to chapter 7 until lukas implements passage through fmod
+        //temporary shift to chapter 7 until lucas implements passage through fmod
         if(lion.transform.localPosition.x < -30)
         {
             Debug.Log("ok");

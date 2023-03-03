@@ -31,7 +31,7 @@ public class Chapter7 : MonoBehaviour
     {
         //fmod stuff
 
-        //temporary shift to chapter 8 until lukas implements passage through fmod
+        //temporary shift to chapter 8 until lucas implements passage through fmod
         if (lion.transform.localPosition.x <= -32)
         {
             GetComponent<Chapter8>().enabled = true;

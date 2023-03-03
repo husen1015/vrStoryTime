@@ -16,7 +16,7 @@ public class FlowerBehaviour : MonoBehaviour
     public GameObject leaf9;
 
     public GameObject colliderObj;
-
+    public static bool isOpen = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,11 +43,12 @@ public class FlowerBehaviour : MonoBehaviour
         leaf7.GetComponent<TwoLayerLeaf>().StartAnim();
         leaf8.GetComponent<TwoLayerLeaf>().StartAnim();
         leaf9.GetComponent<TwoLayerLeaf>().StartAnim();
+        isOpen= true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("yellowButt") || gameObject.CompareTag("redButt"))
+        if (other.gameObject.CompareTag("yellowButt") || other.gameObject.CompareTag("redButt"))
         {
             openFlower();
         }

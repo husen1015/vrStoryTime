@@ -9,14 +9,18 @@ using UnityEngine;
 /// </summary>
 public class Chapter8 : MonoBehaviour
 {
+    //gameObjects
     public GameObject yellowFlower;
     public GameObject butterflies;
     public GameObject lion;
 
+    //gameObjects
     private GameObject whiteButt;
     private GameObject redButt;
     private GameObject yellowButt;
     private Vector3 flowerPos;
+
+    //animators
     private Animator butterflyAnimator;
     private Animator lionAnimation;
     
@@ -25,7 +29,6 @@ public class Chapter8 : MonoBehaviour
     {
         lionAnimation = lion.GetComponent<Animator>();
         butterflyAnimator = butterflies.GetComponent<Animator>();
-        Debug.Log("started");
         butterflyAnimator.enabled = false;
         lionAnimation.enabled = false;
 
@@ -54,6 +57,17 @@ public class Chapter8 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        //fmod stuff
+
+        //temporary shift to chapter 8 until lucas implements passage through fmod
+        if (FlowerBehaviour.isOpen)
+        {
+            whiteButt.GetComponent<Animator>().enabled = false;
+            redButt.GetComponent<Animator>().enabled = false;
+            yellowButt.GetComponent<Animator>().enabled = false;
+            GetComponent<Chapter9>().enabled = true;
+            this.enabled = false;
+        }
     }
 }
