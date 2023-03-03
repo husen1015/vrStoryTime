@@ -4,24 +4,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// the sun hears the butterflies' story and banished the rain away, the weather becomes pleasant again 
+/// butterflies continue to roam under the rain
 /// </summary>
 public class Chapter11 : MonoBehaviour
 {
-    public GameObject skyController;
-    public GameObject rainController;
+    //gameObjects
+    public GameObject butterflies;
+    public GameObject lion;
 
+    //animators
+    private Animator butterflyAnimator;
+    private Animator lionAnimation;
 
     // Start is called before the first frame update
     void Start()
     {
-        skyController.GetComponent<SkyboxController>().fadeToCloudyWeather = false;
-        rainController.GetComponent<RainScript>().RainIntensity = 0;
+        lionAnimation = lion.GetComponent<Animator>();
+        butterflyAnimator = butterflies.GetComponent<Animator>();
+        butterflyAnimator.enabled = true;
+        lionAnimation.enabled = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //fmod stuff
     }
 }
