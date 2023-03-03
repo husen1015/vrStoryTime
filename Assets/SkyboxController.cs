@@ -10,7 +10,7 @@ public class SkyboxController : MonoBehaviour
     public bool fadeToCloudyWeather = false;
     private float tFactor = 0.6f; // time factor
     private float sunnyValue = 0.6f; // upper limit for sunny weather
-    private float cloudyValue = 0.3f; //lower limit for cloudy weather
+    private float cloudyValue = 0.25f; //lower limit for cloudy weather
     private float fadeSpeed = 0.1f; 
     // Start is called before the first frame update
     void Start()

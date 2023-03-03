@@ -20,7 +20,6 @@ public class Chapter7 : MonoBehaviour
     {
         butterflyAnimator = butterflies.GetComponent<Animator>();
         lionAnimation = lion.GetComponent<Animator>();
-        lionAnimation.enabled = false;
         skyController.GetComponent<SkyboxController>().fadeToCloudyWeather = true;
         rainController.GetComponent<RainScript>().RainIntensity= 1;
 
@@ -30,6 +29,13 @@ public class Chapter7 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //fmod stuff
+
+        //temporary shift to chapter 8 until lukas implements passage through fmod
+        if (lion.transform.localPosition.x <= -32)
+        {
+            GetComponent<Chapter8>().enabled = true;
+            this.enabled = false;
+        }
     }
 }

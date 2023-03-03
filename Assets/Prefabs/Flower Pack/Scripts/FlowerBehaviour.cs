@@ -14,9 +14,14 @@ public class FlowerBehaviour : MonoBehaviour
     public GameObject leaf7;
     public GameObject leaf8;
     public GameObject leaf9;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
+
+
     }
 
     // Update is called once per frame
@@ -27,7 +32,7 @@ public class FlowerBehaviour : MonoBehaviour
 
 
 
-    void openFlower()
+    public void openFlower()
     {
         leaf1.GetComponent<TwoLayerLeaf>().StartAnim();
         leaf2.GetComponent<TwoLayerLeaf>().StartAnim();
@@ -40,10 +45,12 @@ public class FlowerBehaviour : MonoBehaviour
         leaf9.GetComponent<TwoLayerLeaf>().StartAnim();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        openFlower();
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    openFlower();
+    //}
+
+    
 
 
 }
