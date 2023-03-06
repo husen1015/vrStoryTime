@@ -12,12 +12,17 @@ public class Chapter7 : MonoBehaviour
     public GameObject skyController;
     public GameObject rainController;
 
+    private Animator lionAnimation;
+
     // Start is called before the first frame update
     void Start()
     {
-        skyController.GetComponent<SkyboxController>().fadeToCloudyWeather = true;
-        rainController.GetComponent<RainScript>().RainIntensity= 1;
 
+        skyController.GetComponent<SkyboxController>().fadeToCloudyWeather = true;
+        rainController.SetActive(true);
+        rainController.GetComponent<RainScript>().RainIntensity= 1;
+        lionAnimation = lion.GetComponent<Animator>();
+        lionAnimation.enabled = false;
         //fmod stuff
     }
 

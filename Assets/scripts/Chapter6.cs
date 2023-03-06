@@ -7,11 +7,15 @@ using UnityEngine;
 /// </summary>
 public class Chapter6 : MonoBehaviour
 {
+
+    public string ChapterEvent;
     public GameObject lion;
     public GameObject butterflies;
 
     private Animator lionAnimation;
     private Animator butterflyAnimator;
+
+    private FMOD.Studio.EventInstance storyInstance;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +25,8 @@ public class Chapter6 : MonoBehaviour
         lionAnimation.enabled = true;
         butterflyAnimator.SetBool("shouldMeet2", false);
         //fmod stuff
-
+        storyInstance = FMODUnity.RuntimeManager.CreateInstance(ChapterEvent);
+        storyInstance.start();
     }
 
     // Update is called once per frame
@@ -29,13 +34,12 @@ public class Chapter6 : MonoBehaviour
     {
 
         //fmod stuff
-        
-        //temporary shift to chapter 7 until lucas implements passage through fmod
-        if(lion.transform.localPosition.x < -30)
+        FMOD.Studio.PLAYBACK_STATE state;   
+        storyInstance.getPlaybackState(out state);
+        if(state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
         {
-            Debug.Log("ok");
             GetComponent<Chapter7>().enabled = true;
-            this.enabled = false;
+            this.enabled=false;
         }
     }
 }
