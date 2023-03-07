@@ -7,6 +7,8 @@ TagManager:
   - whiteButt
   - yellowButt
   - redButt
+  - Terrain
+  - Hand
   layers:
   - Default
   - TransparentFX
@@ -14,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - FlowerLayer
   - 
   - 
   - 
