@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     public GameObject yellowButt;
     public GameObject Lion;
 
+    public GameObject flower1;
+
+    public GameObject flower2;
+
     private Animator animator;
     private bool reachedRedButt = false;
     private bool reachedYellowButt = false;
@@ -29,18 +33,14 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Create a timer with a 5 second interval.
-
         animator = Lion.GetComponent<Animator>();
-
         generalInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Background music");
         generalInstance.start();
 
+        // open flowers
+        flower1.GetComponent<FlowerBehaviour>().openFlower();
+        flower2.GetComponent<FlowerBehaviour>().openFlower();
 
-        //loadNextChapter();
-
-        // generalInstance.release();
-        // storyInstance.release();
 
     }
 

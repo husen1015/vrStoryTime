@@ -34,15 +34,15 @@ public class WFlowerBehaviour : MonoBehaviour
 
     public void openFlower()
     {
-        leaf1.GetComponent<TwoLayerLeaf>().StartAnim();
-        leaf2.GetComponent<TwoLayerLeaf>().StartAnim();
-        leaf3.GetComponent<TwoLayerLeaf>().StartAnim();
-        leaf4.GetComponent<TwoLayerLeaf>().StartAnim();
-        leaf5.GetComponent<TwoLayerLeaf>().StartAnim();
-        leaf6.GetComponent<TwoLayerLeaf>().StartAnim();
-        leaf7.GetComponent<TwoLayerLeaf>().StartAnim();
-        leaf8.GetComponent<TwoLayerLeaf>().StartAnim();
-        leaf9.GetComponent<TwoLayerLeaf>().StartAnim();
+        leaf1.GetComponent<TwoLayerLeaf>().OpenLeaf();
+        leaf2.GetComponent<TwoLayerLeaf>().OpenLeaf();
+        leaf3.GetComponent<TwoLayerLeaf>().OpenLeaf();
+        leaf4.GetComponent<TwoLayerLeaf>().OpenLeaf();
+        leaf5.GetComponent<TwoLayerLeaf>().OpenLeaf();
+        leaf6.GetComponent<TwoLayerLeaf>().OpenLeaf();
+        leaf7.GetComponent<TwoLayerLeaf>().OpenLeaf();
+        leaf8.GetComponent<TwoLayerLeaf>().OpenLeaf();
+        leaf9.GetComponent<TwoLayerLeaf>().OpenLeaf();
         isOpen= true;
     }
 

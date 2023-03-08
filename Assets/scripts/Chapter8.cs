@@ -62,7 +62,7 @@ public class Chapter8 : MonoBehaviour
 
         //temporary shift to chapter 8 until lucas implements passage through fmod
         //placeholder - move to next chapter if flower is open
-        if (YFlowerBehaviour.isOpen)
+        if (FlowerBehaviour.isOpen)
         {
             whiteButt.GetComponent<Animator>().enabled = false;
             redButt.GetComponent<Animator>().enabled = false;
