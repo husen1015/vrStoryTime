@@ -30,7 +30,7 @@ public class Chapter8 : MonoBehaviour
         lionAnimation = lion.GetComponent<Animator>();
         butterflyAnimator = butterflies.GetComponent<Animator>();
         butterflyAnimator.enabled = false;
-        lionAnimation.enabled = false;
+        lionAnimation.enabled = true;
 
         whiteButt = butterflies.transform.GetChild(0).gameObject;
         yellowButt = butterflies.transform.GetChild(1).gameObject;
