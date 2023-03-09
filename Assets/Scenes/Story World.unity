@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15955831, g: 0.20656614, b: 0.26020157, a: 1}
+  m_IndirectSpecularColor: {r: 0.09709846, g: 0.12733021, b: 0.16116242, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10621,7 +10621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &670454152
 Transform:
   m_ObjectHideFlags: 0
@@ -18535,6 +18535,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8362700972569506437, guid: 6ff1bf51ab29945d394c62f79e56ca34, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ff1bf51ab29945d394c62f79e56ca34, type: 3}
 --- !u!4 &1295516175 stripped
@@ -21568,15 +21572,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1810836374240881437, guid: 962996e23ffcbc44d92fb20cd03940cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.061
+      value: -14.073
       objectReference: {fileID: 0}
     - target: {fileID: 1810836374240881437, guid: 962996e23ffcbc44d92fb20cd03940cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.321
+      value: -0.443
       objectReference: {fileID: 0}
     - target: {fileID: 1810836374240881437, guid: 962996e23ffcbc44d92fb20cd03940cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.335
+      value: 5.547
       objectReference: {fileID: 0}
     - target: {fileID: 1810836374240881437, guid: 962996e23ffcbc44d92fb20cd03940cd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27727,6 +27731,8 @@ GameObject:
   - component: {fileID: 1905772983}
   - component: {fileID: 1905772984}
   - component: {fileID: 1905772985}
+  - component: {fileID: 1905772991}
+  - component: {fileID: 1905772990}
   - component: {fileID: 1905772986}
   - component: {fileID: 1905772987}
   - component: {fileID: 1905772988}
@@ -27891,8 +27897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1b7281ae03e064990f0499693ad0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yellowFlower: {fileID: 1137163846}
-  butterflies: {fileID: 79762687}
+  ChapterEvent: event:/Story Part 8
   lion: {fileID: 1989891611}
 --- !u!114 &1905772986
 MonoBehaviour:
@@ -27951,6 +27956,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skyController: {fileID: 0}
   rainController: {fileID: 0}
+  butterflies: {fileID: 0}
+--- !u!114 &1905772990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905772975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eea299cb0d7a4bf58868cbf362e6de9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1905772991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905772975}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0fda15f53acb495ba4671f20577dfaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   butterflies: {fileID: 0}
 --- !u!1001 &1908727037
 PrefabInstance:
