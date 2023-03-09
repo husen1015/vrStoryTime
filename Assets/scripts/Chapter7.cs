@@ -28,7 +28,7 @@ public class Chapter7 : MonoBehaviour
         rainController.SetActive(true);
         rainController.GetComponent<RainScript>().RainIntensity= 1;
         lionAnimation = lion.GetComponent<Animator>();
-        lionAnimation.enabled = false;
+        lionAnimation.enabled = true;
 
         // close flowers because of rains
         flower1.GetComponent<FlowerBehaviour>().closeFlower();
