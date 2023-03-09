@@ -70,5 +70,6 @@ public class Chapter8 : MonoBehaviour
             GetComponent<Chapter9>().enabled = true;
             this.enabled = false;
         }
+        // lionAnimation.SetBool("FinishedChapter8", true);
     }
 }
