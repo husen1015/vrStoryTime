@@ -41,7 +41,6 @@ public class GameManager : MonoBehaviour
         flower1.GetComponent<FlowerBehaviour>().openFlower();
         flower2.GetComponent<FlowerBehaviour>().openFlower();
 
-
     }
 
     // Update is called once per frame
@@ -77,19 +76,6 @@ public class GameManager : MonoBehaviour
         // }
     }
 
-
-    IEnumerator waitXSeconds()
-    {
-        yield return new WaitForSeconds(Waiting_Time);
-        // SET BOOL TO FALSE WHEN Waiting_Time in SECONDS PASSED
-        animator.SetBool("wait", false);
-    }
-
-    void loadNextChapter()
-    {
-        storyInstance = FMODUnity.RuntimeManager.CreateInstance(ChaptersList[currChapter++]);
-        storyInstance.start();
-    }
 
 
 

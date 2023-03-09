@@ -64,12 +64,12 @@ public class FlowerBehaviour : MonoBehaviour
     {
         if (other.gameObject.CompareTag("yellowButt") || other.gameObject.CompareTag("redButt"))
         {
-            openFlower();
+            //openFlower();
         }
         else
         {
             //to do - add animation fot close flower
-            closeFlower();
+            //closeFlower();
         }
     }
 

@@ -24,23 +24,21 @@ public class TwoLayerLeaf : MonoBehaviour
 
     public void OpenLeaf()
     {
-        Debug.Log("Calling open...");
         string[] animations = {"LowerLeafAnimation", "UpperLeafAnim"};
         StartCoroutine("startAfterTime", animations);
     }
 
     IEnumerator startAfterTime(string[] animations)
     {
-        Debug.Log("Opening...");
         float randomNumber = Random.Range(0, animCutoff);
         yield return new WaitForSeconds(randomNumber / animCutoff);
  
-        outerleaf.GetComponent<Animator>().Play(animations[0],  -1, 0f);
+        outerleaf.GetComponent<Animator>().Play(animations[0]);
 
         randomNumber = Random.Range(0, animCutoff);
         yield return new WaitForSeconds(randomNumber / animCutoff);
 
-        innerleaf.GetComponent<Animator>().Play(animations[1],  -1, 0f);
+        innerleaf.GetComponent<Animator>().Play(animations[1]);
     }
 
     public void CloseLeaf()

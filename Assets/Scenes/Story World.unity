@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15948704, g: 0.20641536, b: 0.25995564, a: 1}
+  m_IndirectSpecularColor: {r: 0.5065524, g: 0.66118574, b: 0.83244586, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15734,28 +15734,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6083332851657120502, guid: 6f51265e03ccf4ba7bd6d98b6f973b08, type: 3}
   m_PrefabInstance: {fileID: 1759550927}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1076088622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076088614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55afe7810195f10439889b802566eb9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leaf1: {fileID: 1449127520}
-  leaf2: {fileID: 435969647}
-  leaf3: {fileID: 1129258747}
-  leaf4: {fileID: 1072936743}
-  leaf5: {fileID: 1918351231}
-  leaf6: {fileID: 1147392332}
-  leaf7: {fileID: 1211535052}
-  leaf8: {fileID: 1603428197}
-  leaf9: {fileID: 1052147591}
-  colliderObj: {fileID: 0}
 --- !u!1001 &1077277389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16622,28 +16600,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6083332851657120502, guid: 6ff1bf51ab29945d394c62f79e56ca34, type: 3}
   m_PrefabInstance: {fileID: 1294568373}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1137163854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1137163846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55afe7810195f10439889b802566eb9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leaf1: {fileID: 1449127520}
-  leaf2: {fileID: 435969647}
-  leaf3: {fileID: 1129258747}
-  leaf4: {fileID: 1072936743}
-  leaf5: {fileID: 1918351231}
-  leaf6: {fileID: 1147392332}
-  leaf7: {fileID: 1211535052}
-  leaf8: {fileID: 1603428197}
-  leaf9: {fileID: 1052147591}
-  colliderObj: {fileID: 0}
 --- !u!1001 &1137389701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17924,30 +17880,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6278383268496828069, guid: 6ff1bf51ab29945d394c62f79e56ca34, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 46741c04834c54c80b6cb9fe539df87e, type: 2}
-    - target: {fileID: 6278383268655109641, guid: 6ff1bf51ab29945d394c62f79e56ca34, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 46741c04834c54c80b6cb9fe539df87e, type: 2}
-    - target: {fileID: 6278383268966826125, guid: 6ff1bf51ab29945d394c62f79e56ca34, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 46741c04834c54c80b6cb9fe539df87e, type: 2}
-    - target: {fileID: 6278383269707435024, guid: 6ff1bf51ab29945d394c62f79e56ca34, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 46741c04834c54c80b6cb9fe539df87e, type: 2}
-    - target: {fileID: 6278383270203046811, guid: 6ff1bf51ab29945d394c62f79e56ca34, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 46741c04834c54c80b6cb9fe539df87e, type: 2}
-    - target: {fileID: 6278383270518598781, guid: 6ff1bf51ab29945d394c62f79e56ca34, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 46741c04834c54c80b6cb9fe539df87e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ff1bf51ab29945d394c62f79e56ca34, type: 3}
 --- !u!4 &1295516175 stripped
@@ -24699,6 +24631,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1903441246}
     m_Modifications:
+    - target: {fileID: 1076088622, guid: 6f51265e03ccf4ba7bd6d98b6f973b08, type: 3}
+      propertyPath: leaf1
+      value: 
+      objectReference: {fileID: 1449127520}
+    - target: {fileID: 1076088622, guid: 6f51265e03ccf4ba7bd6d98b6f973b08, type: 3}
+      propertyPath: leaf2
+      value: 
+      objectReference: {fileID: 435969647}
+    - target: {fileID: 1076088622, guid: 6f51265e03ccf4ba7bd6d98b6f973b08, type: 3}
+      propertyPath: leaf3
+      value: 
+      objectReference: {fileID: 1129258747}
+    - target: {fileID: 1076088622, guid: 6f51265e03ccf4ba7bd6d98b6f973b08, type: 3}
+      propertyPath: leaf4
+      value: 
+      objectReference: {fileID: 1072936743}
+    - target: {fileID: 1076088622, guid: 6f51265e03ccf4ba7bd6d98b6f973b08, type: 3}
+      propertyPath: leaf5
+      value: 
+      objectReference: {fileID: 1918351231}
+    - target: {fileID: 1076088622, guid: 6f51265e03ccf4ba7bd6d98b6f973b08, type: 3}
+      propertyPath: leaf6
+      value: 
+      objectReference: {fileID: 1147392332}
+    - target: {fileID: 1076088622, guid: 6f51265e03ccf4ba7bd6d98b6f973b08, type: 3}
+      propertyPath: leaf7
+      value: 
+      objectReference: {fileID: 1211535052}
+    - target: {fileID: 1076088622, guid: 6f51265e03ccf4ba7bd6d98b6f973b08, type: 3}
+      propertyPath: leaf8
+      value: 
+      objectReference: {fileID: 1603428197}
+    - target: {fileID: 1076088622, guid: 6f51265e03ccf4ba7bd6d98b6f973b08, type: 3}
+      propertyPath: leaf9
+      value: 
+      objectReference: {fileID: 1052147591}
     - target: {fileID: 6083332851657017046, guid: 6f51265e03ccf4ba7bd6d98b6f973b08, type: 3}
       propertyPath: m_Name
       value: WhiteTitltedFlower
@@ -26990,8 +26958,8 @@ MonoBehaviour:
   redButt: {fileID: 625308439}
   yellowButt: {fileID: 5630937}
   Lion: {fileID: 1989891611}
-  flower1: {fileID: 1137163846}
-  flower2: {fileID: 1076088614}
+  flower1: {fileID: 1076088614}
+  flower2: {fileID: 1137163846}
 --- !u!4 &1905772977
 Transform:
   m_ObjectHideFlags: 0
