@@ -10,12 +10,15 @@ public class SecondQuizChapter : MonoBehaviour
     // the next one after it's been dragged into the flower.
 
     public GameObject butterflies;
-    public GameObject QuizButterflies;
+    public GameObject QuizButterflyRed;
+    public GameObject QuizButterflyYellow;
+    public GameObject QuizButterflyWhite;
 
     // Start is called before the first frame update
     void Start()
     {
         butterflies.SetActive(false); // disappear the butterflies
+        QuizButterflyRed.SetActive(true);
     }
 
     // Update is called once per frame
