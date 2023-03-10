@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{307061c8-857e-4b2b-ad08-d77d426ff731}">
+		<property name="assetPath">
+			<value>נסו לגעת בפרח ולעורר אותו.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.7689795918367346</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{66760360-68f1-4e82-9dd1-80949b31ba86}</destination>
+		</relationship>
+	</object>
+</objects>

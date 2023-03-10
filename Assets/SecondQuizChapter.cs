@@ -9,15 +9,18 @@ public class SecondQuizChapter : MonoBehaviour
     // to make sure that the player chooses his butterflies correctly (and not the white one first) we'll make sure to show one butterfly at a time, and display
     // the next one after it's been dragged into the flower.
 
+    public GameObject butterflies;
+    public GameObject QuizButterflies;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        butterflies.SetActive(false); // disappear the butterflies
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // lionAnimation.SetBool("FinishedChapter8", true);
     }
 }

@@ -38,8 +38,8 @@ public class GameManager : MonoBehaviour
         generalInstance.start();
 
         // open flowers
-        flower1.GetComponent<FlowerBehaviour>().openFlower();
-        flower2.GetComponent<FlowerBehaviour>().openFlower();
+        //flower1.GetComponent<FlowerBehaviour>().openFlower();
+        //flower2.GetComponent<FlowerBehaviour>().openFlower();
 
     }
 

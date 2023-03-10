@@ -16,12 +16,11 @@ public class FlowerBehaviour : MonoBehaviour
     public GameObject leaf9;
 
     public GameObject colliderObj;
-    public static bool isOpen = false;
+    public bool opened;
     // Start is called before the first frame update
     void Start()
     {
-
-
+        opened = false;
     }
 
     // Update is called once per frame
@@ -29,8 +28,6 @@ public class FlowerBehaviour : MonoBehaviour
     {
 
     }
-
-
 
     public void openFlower()
     {
@@ -43,11 +40,12 @@ public class FlowerBehaviour : MonoBehaviour
         leaf7.GetComponent<TwoLayerLeaf>().OpenLeaf();
         leaf8.GetComponent<TwoLayerLeaf>().OpenLeaf();
         leaf9.GetComponent<TwoLayerLeaf>().OpenLeaf();
-        isOpen = true;
+
     }
 
     public void closeFlower()
     {
+        opened = false;
         leaf1.GetComponent<TwoLayerLeaf>().CloseLeaf();
         leaf2.GetComponent<TwoLayerLeaf>().CloseLeaf();
         leaf3.GetComponent<TwoLayerLeaf>().CloseLeaf();
@@ -57,21 +55,24 @@ public class FlowerBehaviour : MonoBehaviour
         leaf7.GetComponent<TwoLayerLeaf>().CloseLeaf();
         leaf8.GetComponent<TwoLayerLeaf>().CloseLeaf();
         leaf9.GetComponent<TwoLayerLeaf>().CloseLeaf();
-        isOpen = false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("yellowButt") || other.gameObject.CompareTag("redButt"))
+        if (!other.gameObject.CompareTag("yellowButt") && !other.gameObject.CompareTag("redButt") && !other.gameObject.CompareTag("whiteButt"))
         {
-            //openFlower();
-        }
-        else
-        {
-            //to do - add animation fot close flower
-            //closeFlower();
+            opened = true;
+            openFlower();
+            Debug.Log("Opened is");
+            Debug.Log(opened);
         }
     }
+
+    public bool isOpen()
+    {
+        return opened;
+    }
+
 
 
 

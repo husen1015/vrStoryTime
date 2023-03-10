@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ea471838-9c90-421b-a5d8-95a7d65b0ca3}">
+		<property name="assetPath">
+			<value>עיזרו לפרפרים לעורר את הפרח.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.8473469387755102</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{66760360-68f1-4e82-9dd1-80949b31ba86}</destination>
+		</relationship>
+	</object>
+</objects>
