@@ -9,6 +9,9 @@ TagManager:
   - redButt
   - Terrain
   - Hand
+  - RedButtGrabbable
+  - YellowButtGrabbable
+  - WhiteButtGrabbable
   layers:
   - Default
   - TransparentFX

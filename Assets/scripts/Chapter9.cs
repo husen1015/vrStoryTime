@@ -12,13 +12,15 @@ public class Chapter9 : MonoBehaviour
 
     private Animator butterflyAnimator;
     private Animator lionAnimation;
+
+    private FMOD.Studio.EventInstance storyInstance;
     // Start is called before the first frame update
     void Start()
     {
         lionAnimation = lion.GetComponent<Animator>();
         butterflyAnimator = butterflies.GetComponent<Animator>();
         butterflyAnimator.enabled = true;
-        lionAnimation.enabled = true;
+        lionAnimation.SetBool("FinishedChapter8", true);
     }
 
     // Update is called once per frame
