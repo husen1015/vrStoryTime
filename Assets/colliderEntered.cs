@@ -45,7 +45,7 @@ public class colliderEntered : MonoBehaviour
             storyInstance = FMODUnity.RuntimeManager.CreateInstance("event:/CorrectSound"); // well done audio
             storyInstance.start();
             gameManager.GetComponent<SecondQuizChapter>().enabled = false;
-            gameManager.GetComponent<Chapter9>().enabled = true;
+            gameManager.GetComponent<SecondQuizFinished>().enabled = true;
             self.SetActive(false);
         }
     }

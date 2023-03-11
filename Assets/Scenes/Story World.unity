@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16550459, g: 0.21440448, b: 0.27030036, a: 1}
+  m_IndirectSpecularColor: {r: 0.16191235, g: 0.20972717, b: 0.26430136, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -42945,6 +42945,7 @@ GameObject:
   - component: {fileID: 1905772985}
   - component: {fileID: 1905772991}
   - component: {fileID: 1905772990}
+  - component: {fileID: 1905772992}
   - component: {fileID: 1905772986}
   - component: {fileID: 1905772987}
   - component: {fileID: 1905772988}
@@ -42963,7 +42964,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905772975}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f318c355c9934c045877fe818f07f599, type: 3}
   m_Name: 
@@ -43027,7 +43028,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905772975}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 775d8a535fd6a45fb82ebcc94a542905, type: 3}
   m_Name: 
@@ -43123,7 +43124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73172e28200bac0458c1df64650e14c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChapterEvent: event:/Story Part 9
   butterflies: {fileID: 79762687}
+  ColoredFlower: {fileID: 1137163846}
   lion: {fileID: 1989891611}
 --- !u!114 &1905772987
 MonoBehaviour:
@@ -43176,7 +43179,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905772975}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eea299cb0d7a4bf58868cbf362e6de9, type: 3}
   m_Name: 
@@ -43198,6 +43201,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChapterEvent: event:/First Quiz
   ColoredFlower: {fileID: 1137163846}
+--- !u!114 &1905772992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905772975}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a90c3ce23e948a480f170d5b7432c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChapterEvent: event:/After Second Quiz
+  butterflies: {fileID: 79762687}
 --- !u!1001 &1908727037
 PrefabInstance:
   m_ObjectHideFlags: 0
