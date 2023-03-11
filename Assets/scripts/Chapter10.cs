@@ -6,64 +6,47 @@ using UnityEngine;
 /// </summary>
 public class Chapter10 : MonoBehaviour
 {
-    //gameObjects
+
+    public string ChapterEvent;
     public GameObject butterflies;
+
+    public GameObject WhiteFlower;
+
     public GameObject lion;
-    public GameObject whiteFlower;
 
-    //animators
+
     private Animator butterflyAnimator;
+
+    private FMOD.Studio.EventInstance storyInstance;
+
     private Animator lionAnimation;
-
-    //butterflies
-    private GameObject whiteButt;
-    private GameObject redButt;
-    private GameObject yellowButt;
-
-    private Vector3 flowerPos;
-
     // Start is called before the first frame update
     void Start()
     {
+        lionAnimation = lion.GetComponent<Animator>();
         lionAnimation.SetBool("FinishedChapter9", true);
 
-        lionAnimation = lion.GetComponent<Animator>();
+        WhiteFlower.GetComponent<FlowerBehaviour>().closeFlower();
+
         butterflyAnimator = butterflies.GetComponent<Animator>();
-        butterflyAnimator.enabled = false;
-        lionAnimation.enabled = false;
+        butterflyAnimator.enabled = true;
 
-        whiteButt = butterflies.transform.GetChild(0).gameObject;
-        yellowButt = butterflies.transform.GetChild(1).gameObject;
-        redButt = butterflies.transform.GetChild(2).gameObject;
 
-        //turn the individual animators on- had to use individual animators in order to be able to change the butterfly's transform manually
-        whiteButt.GetComponent<Animator>().enabled = true;
-        redButt.GetComponent<Animator>().enabled = true;
-        yellowButt.GetComponent<Animator>().enabled = true;
-
-        //position the butterflies around the flower
-        flowerPos = whiteFlower.transform.position;
-        whiteButt.transform.position = new Vector3(flowerPos.x, flowerPos.y + 0.5f, flowerPos.z - 1);
-        redButt.transform.position = new Vector3(flowerPos.x, flowerPos.y + 0.5f, flowerPos.z + 1);
-        yellowButt.transform.position = new Vector3(flowerPos.x + 1, flowerPos.y + 0.5f, flowerPos.z);
-        whiteButt.transform.LookAt(whiteFlower.transform);
-        redButt.transform.LookAt(whiteFlower.transform);
-        yellowButt.transform.LookAt(whiteFlower.transform);
+        storyInstance = FMODUnity.RuntimeManager.CreateInstance(ChapterEvent);
+        storyInstance.start();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         //fmod stuff
-
-        //temporary shift to chapter 11 until lucas implements passage through fmod
-        if (WFlowerBehaviour.isOpen)
+        FMOD.Studio.PLAYBACK_STATE state;   
+        storyInstance.getPlaybackState(out state);
+        if(state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
         {
-            whiteButt.GetComponent<Animator>().enabled = false;
-            redButt.GetComponent<Animator>().enabled = false;
-            yellowButt.GetComponent<Animator>().enabled = false;
             GetComponent<Chapter11>().enabled = true;
-            this.enabled = false;
+            this.enabled=false;
         }
     }
 }

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{735369d6-7696-47c3-b3fe-5c425a5c74ff}">
 		<property name="name">
-			<value>Chapter 10</value>
+			<value>Story Part 10</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{d1a47633-5f78-4dd7-a578-493ce7165fe8}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{dd6c6953-f09e-40a3-b5d9-7ab337d8e84b}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{a568bee2-01e2-47e7-a901-3a5e506af9d7}">
@@ -73,6 +76,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{2d50301d-f262-49e6-a56a-cf67c82e62ea}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{fcc60f77-2069-4804-8357-394685ef2ce8}</destination>
 		</relationship>
@@ -85,7 +91,7 @@
 	</object>
 	<object class="SingleSound" id="{c5c5fc00-e704-4931-ac0a-2632d335b920}">
 		<property name="length">
-			<value>50.900336582335065</value>
+			<value>16.525122463180825</value>
 		</property>
 		<property name="timelockedOffset">
 			<value>201.88660219317467</value>
@@ -102,7 +108,7 @@
 	<object class="MixerBusPanner" id="{af0e3170-0eda-49bf-9e4e-07897c7bba8d}" />
 	<object class="SingleSound" id="{14271cf1-7627-413f-99ea-17f948a32a97}">
 		<property name="length">
-			<value>24.490124971560199</value>
+			<value>16.525122463180825</value>
 		</property>
 		<property name="timelockedOffset">
 			<value>97.475589314154092</value>

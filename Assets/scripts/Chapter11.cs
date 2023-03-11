@@ -8,26 +8,31 @@ using UnityEngine;
 /// </summary>
 public class Chapter11 : MonoBehaviour
 {
-    //gameObjects
+    public string ChapterEvent;
+    public GameObject skyController;
+    public GameObject rainController;
     public GameObject butterflies;
-    public GameObject lion;
 
-    //animators
     private Animator butterflyAnimator;
-    private Animator lionAnimation;
+
+    private FMOD.Studio.EventInstance storyInstance;
 
     // Start is called before the first frame update
     void Start()
     {
-        lionAnimation = lion.GetComponent<Animator>();
+
+        storyInstance = FMODUnity.RuntimeManager.CreateInstance(ChapterEvent);
+        storyInstance.start();
+        //return weather back to sunny
+        skyController.GetComponent<SkyboxController>().fadeToCloudyWeather = false;
+        rainController.GetComponent<RainScript>().RainIntensity = 0;
         butterflyAnimator = butterflies.GetComponent<Animator>();
-        butterflyAnimator.enabled = true;
-        lionAnimation.enabled = true;
+        butterflyAnimator.SetBool("shouldCelebrate", true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //fmod stuff
+
     }
 }
