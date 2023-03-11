@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{89f215d0-4229-4ee7-88c6-ed6a9502be53}">
 		<property name="name">
-			<value>Story Part 10</value>
+			<value>After Forth Quiz</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -88,7 +88,7 @@
 	</object>
 	<object class="SingleSound" id="{256128c1-7575-4bea-a4ca-b4534920dc5e}">
 		<property name="length">
-			<value>67.71986624188969</value>
+			<value>16.819529659554625</value>
 		</property>
 		<property name="timelockedOffset">
 			<value>185.06707253362003</value>
@@ -105,7 +105,7 @@
 	<object class="MixerBusPanner" id="{ec9ea027-2cb1-493f-a268-6dab5e4d0f16}" />
 	<object class="SingleSound" id="{24d709f5-cd60-45ea-88a0-657798fb4c31}">
 		<property name="length">
-			<value>41.309654631114824</value>
+			<value>16.819529659554625</value>
 		</property>
 		<property name="timelockedOffset">
 			<value>80.65605965459946</value>

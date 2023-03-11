@@ -44,15 +44,12 @@ public class Chapter9 : MonoBehaviour
     void Update()
     {
         //fmod stuff
-
-        //Debug.Log(lion.transform.localPosition.x);
-
-        //temporary shift to chapter 10 until lucas implements passage through fmod
-        // if (lion.transform.localPosition.x <= -39)
-        // {
-            
-        //     GetComponent<Chapter10>().enabled = true;
-        //     this.enabled = false;
-        // }
+        FMOD.Studio.PLAYBACK_STATE state;   
+        storyInstance.getPlaybackState(out state);
+        if(state == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+        {
+            GetComponent<ThirdQuizChapter>().enabled = true;
+            this.enabled=false;
+        }
     }
 }
