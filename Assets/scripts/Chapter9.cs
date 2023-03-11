@@ -25,12 +25,18 @@ public class Chapter9 : MonoBehaviour
     void Start()
     {
         lionAnimation = lion.GetComponent<Animator>();
+        //lionAnimation.SetBool("FinishedChapter8", true);
         lionAnimation.SetBool("FinishedChapter8", true);
+        lionAnimation.SetBool("FinishedChapter9", false);
 
         ColoredFlower.GetComponent<FlowerBehaviour>().closeFlower();
 
         butterflyAnimator = butterflies.GetComponent<Animator>();
         butterflyAnimator.enabled = true;
+
+
+        storyInstance = FMODUnity.RuntimeManager.CreateInstance(ChapterEvent);
+        storyInstance.start();
         
     }
 

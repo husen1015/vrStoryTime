@@ -59,6 +59,9 @@ public class Chapter8 : MonoBehaviour
         storyInstance = FMODUnity.RuntimeManager.CreateInstance(ChapterEvent);
         storyInstance.start();
 
+        lionAnimation.SetBool("FinishedChapter8", false);
+        
+
     }
 
     // Update is called once per frame
