@@ -25,6 +25,8 @@ public class Chapter10 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        lionAnimation.SetBool("FinishedChapter9", true);
+
         lionAnimation = lion.GetComponent<Animator>();
         butterflyAnimator = butterflies.GetComponent<Animator>();
         butterflyAnimator.enabled = false;
