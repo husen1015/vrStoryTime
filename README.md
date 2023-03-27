@@ -10,8 +10,13 @@ It's purpose wasn't only enternainment, throughout time we realized that it coul
 
 The biggest challenge was to create the experience from a stationary position, such as sitting on a chair, or in bed, without requiring to move around.
 
+We also decided to discard the VR kit's controllers (the one you hold in your hands), and rely only on Hand Tracking technology, to create a more realistic experience, and create a more intimate experience with the story and the world itself.
+
+As well as having a relaxing and secure feeling throughout the story, something which we were able to maintain by choosing the right theme of music, and in the visuals by involving animals, and the scenery as one.
+
 
 https://user-images.githubusercontent.com/101108230/227888783-f9d94b3f-9a1a-4b43-b696-3f4a259856a5.mp4
+
 
 
 <img width="1435" alt="Screenshot 2023-03-12 at 08 47 00" src="https://user-images.githubusercontent.com/101108230/227886471-2f6683c1-dba4-4afc-8fcf-b89b2f7851c1.png">
