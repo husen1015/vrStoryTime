@@ -10,6 +10,10 @@ It's purpose wasn't only enternainment, throughout time we realized that it coul
 
 The biggest challenge was to create the experience from a stationary position, such as sitting on a chair, or in bed, without requiring to move around.
 
+
+https://user-images.githubusercontent.com/101108230/227888783-f9d94b3f-9a1a-4b43-b696-3f4a259856a5.mp4
+
+
 <img width="1435" alt="Screenshot 2023-03-12 at 08 47 00" src="https://user-images.githubusercontent.com/101108230/227886471-2f6683c1-dba4-4afc-8fcf-b89b2f7851c1.png">
 <img width="1435" alt="Screenshot 2023-03-12 at 08 47 15" src="https://user-images.githubusercontent.com/101108230/227886483-a86045f6-b152-4913-b507-54a962c0713c.png">
 <img width="1434" alt="Screenshot 2023-03-12 at 08 47 37" src="https://user-images.githubusercontent.com/101108230/227886485-8a488902-c1b4-4fc2-bbc8-e886c1eb369b.png">
