@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Modern Bedroom/Scene/Opening Bedroom Scene.unity
-    guid: 0f18860b70e2a414fb83e3c73784b8a1
-  - enabled: 1
+    path: Assets/IL3DN/Scenes/TheIllustratedNature_FreeDemo.unity
+    guid: f7966cd1a5deb32479dd5f360cc5a513
+  - enabled: 0
+    path: Assets/Scenes/Main menu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
     path: Assets/Scenes/Story World.unity
     guid: 4d537042e9b5c40f4b92ecca46dd8306
   m_configObjects:
