@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 48
+  controlID: 19
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 49
+  controlID: 20
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 50
+  controlID: 21
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -215,8 +215,8 @@ MonoBehaviour:
     y: 0
     width: 1175
     height: 490
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -405,7 +405,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 84f2ffff32fbffff
+      m_ExpandedIDs: 70d5feffbed5feff5ce1feff82edfeff0ef5feff36fcfeff9cfcfeff1400ffff6c02ffff1010ffff5e10fffffc1bffff2228ffffae2fffffb03cfffff23fffff4640ffff0652ffff5c5effffaa66ffff3875ffff6086ffff90a0ffff2eadffff2ab5ffff88bcffff82bdfffffcbfffff94c9fffff4d1ffffeed2ffffdcdfffff18e2ffff34f0ffff32fbffff0a70000046710000f89300003a960000daa8000068b3000004b5000098b60000aad000004cd2000048e8000008150100fe150100361701006017010038190100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -654,9 +654,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.202436, y: 1.743908, z: -5.0548496}
+    m_Target: {x: -7.8586516, y: 1.3441682, z: -10.467138}
     speed: 2
-    m_Value: {x: -7.202436, y: 1.743908, z: -5.0548496}
+    m_Value: {x: -7.8586516, y: 1.3441682, z: -10.467138}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -703,13 +703,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.020142812, y: -0.9332858, z: -0.05073778, w: -0.35477254}
+    m_Target: {x: -0.0046955245, y: 0.6290559, z: 0.002326658, w: 0.77722645}
     speed: 2
-    m_Value: {x: 0.02022025, y: -0.9328151, z: -0.050710905, w: -0.35619596}
+    m_Value: {x: -0.0046959477, y: 0.6291126, z: 0.0023268678, w: 0.7772965}
   m_Size:
-    m_Target: 0.8660254
+    m_Target: 0.2696434
     speed: 2
-    m_Value: 0.866025
+    m_Value: 0.26923952
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -997,7 +997,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_SearchFilter:
-    m_NameFilter: OVR
+    m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -1009,22 +1009,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/KidRoom/ROOM_BOY
+    - Assets/KidRoom/ROOM_GIRL/SCENE
     m_Globs: []
-    m_OriginalText: OVR
+    m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/KidRoom/ROOM_BOY
+  - Assets/KidRoom/ROOM_GIRL/SCENE
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/lucas/vrStoryTime
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 62.55713}
-    m_SelectedIDs: 48800000
-    m_LastClickedID: 32840
-    m_ExpandedIDs: 00000000027f0000047f0000067f0000087f00000a7f00001280000000ca9a3b
+    scrollPos: {x: 0, y: 278.6277}
+    m_SelectedIDs: 7ea50000
+    m_LastClickedID: 42366
+    m_ExpandedIDs: 000000007a8600007c8600007e860000828600002888000030880000328800005e880000fe8c00007ca5000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1052,7 +1052,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000027f0000047f0000067f0000087f00000a7f0000
+    m_ExpandedIDs: 000000007a8600007c8600007e8600008086000082860000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1166,7 +1166,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 115912
+  m_LastSelectedObjectID: 46340
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
